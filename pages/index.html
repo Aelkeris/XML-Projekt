@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>XML</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script type="text/javascript" src="../scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    
+    <div id=main>
+        <img id=zupanija01 src="../pictures/zupanije/Layer 1.png" >
+        <img id=podloga src="../pictures/zupanije/Layer 0.png" alt="Karta">
+        
+    </div>
+
+    <script>
+        
+        $( "#zupanija01" )
+        .mouseenter(function() {
+            $(  "#zupanija01").css( 'visibility', 'visible' );
+            
+        })
+        .mouseleave(function() {
+             $(  "#zupanija01", this ).css( 'visibility', 'hidden' );
+        });
+        
+        $( "#zupanija01" ).click(function()
+        {
+            $( "#zupanija01" ).css('visibility', 'visible');
+       
+        });
+   
+        
+    </script>
+
+
+
+
+</body>
+</html>
