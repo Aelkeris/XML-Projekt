@@ -5,39 +5,84 @@
     <title>XML</title>
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <script type="text/javascript" src="../scripts/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../maphilight/jquery.maphilight.js"></script>
 </head>
 
 <body>
-    
-    
-    <div id=main>
+
+ <!--   <div id=main>
         <img id=zupanija01 src="../pictures/zupanije/Layer 1.png" >
-        <img id=podloga src="../pictures/zupanije/Layer 0.png" alt="Karta">
-        
+        <img id=podloga src="../pictures/zupanije/Layer 0.png" > 
     </div>
 
-    <script>
-        
-        $( "#zupanija01" )
-        .mouseenter(function() {
-            $(  "#zupanija01").css( 'visibility', 'visible' );
-            
-        })
-        .mouseleave(function() {
-             $(  "#zupanija01", this ).css( 'visibility', 'hidden' );
-        });
-        
-        $( "#zupanija01" ).click(function()
-        {
-            $( "#zupanija01" ).css('visibility', 'visible');
-       
-        });
-   
-        
+    <script>    
+        $("#zupanija01").hover(function() { 
+        $(this).css('opacity','1')} ); 
+        $("#zupanija01").mouseleave(function() { 
+        $(this).css('opacity','0')} );     
     </script>
+-->
 
 
+     <script>$(function() {
+        $('.map').maphilight({
+            fillColor: '008800'
+        });    
+    });</script>
+    
+<p>
+    <img id="karta" src="../Pictures/KartaHrvatske.png" alt="Hrvatska" width="720" height="697" border="0" usemap="#Map" class="map"/>
+
+    <map name="Map" >
+        <area shape="poly" coords="241,157,264,144,270,149,278,144,276,138,279,126,289,123,303,132,289,142,289,152,294,156,
+                                    293,159,287,158,284,163,298,176,321,151,329,154,333,142,325,124,334,111,339,120,345,118,
+                                    379,134,379,143,372,142,370,149,361,148,358,161,370,169,358,179,344,171,335,176,328,171,
+                                    314,182,318,190,301,197,300,189,291,185,286,189,270,176,263,177,259,176,258,172" 
+                                    />
+  
+        <area shape="poly" coords="54,46,23,72,91,103,94,63" href="http://yahoo.com" target="_blank" alt="hotspot 2" title="Yahoo"
+        />
+
+        <area shape="poly" coords="101,64,98,105,266,105,262,65" href="http://example.com" target="_blank" alt="hotspot 3" title="Example"
+        />
+
+        <area shape="poly" coords="274,102,270,64,308,49,338,77" href="http://dynamicdrive.com" target="_blank" alt="hotspot 4" title="Dynamic Drive"
+        />
+
+        <area shape="poly" coords="31,88,88,117,151,283" href="http://wordpress.org" target="_blank" alt="hotspot 5" title="WordPress"
+        />
+
+        <area shape="poly" coords="101,113,261,113,185,327,101,113" href="http://jQuery.com" target="_blank" alt="hotspot 6" title="jQuery"
+        />
+
+        <area shape="poly" coords="275,110,335,87,226,275" href="http://adobe.com" target="_blank" alt="hotspot 7" title="Adobe"
+        />
+    </map>
+</p>
+
+
+
+
+<p><img src="../Pictures/Diamond.png" alt="Diamond" width="379" height="361" border="0" usemap="#Map2" />
+
+<map name="Map" id="Map2">
+<area shape="poly" coords="97,24,57,41,97,57,266,57,304,41,265,25" href="http:/google.com" target="_blank" alt="hotspot 1" title="Google" />
+
+<area shape="poly" coords="54,46,23,72,91,103,94,63" href="http://yahoo.com" target="_blank" alt="hotspot 2" title="Yahoo"/>
+
+<area shape="poly" coords="101,64,98,105,266,105,262,65" href="http://example.com" target="_blank" alt="hotspot 3" title="Example"/>
+
+<area shape="poly" coords="274,102,270,64,308,49,338,77" href="http://dynamicdrive.com" target="_blank" alt="hotspot 4" title="Dynamic Drive" />
+
+<area shape="poly" coords="31,88,88,117,151,283" href="http://wordpress.org" target="_blank" alt="hotspot 5" title="WordPress" />
+
+<area shape="poly" coords="101,113,261,113,185,327,101,113" href="http://jQuery.com" target="_blank" alt="hotspot 6" title="jQuery" />
+
+<area shape="poly" coords="275,110,335,87,226,275" href="http://adobe.com" target="_blank" alt="hotspot 7" title="Adobe" />
+</map>
+</p>
 
 
 </body>
