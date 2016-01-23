@@ -1,37 +1,6 @@
-#main
-{
+
+#HR{
     width: 720px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-}
-
-
-#podloga
-{
-    position: static;
-}
-
-#zupanija01
-{
-    padding: 0px;
-    border: 0px;
-    top: 60px;
-    left: 297px;
-    position:absolute;
-    display: flex;
-    z-index: 1;
-    opacity: 0;
-}
-
-
-#zupanija02
-{
-    padding: 0px;
-    border: 0px;
-    top: 60px;
-    left: 297px;
-    position:absolute;
-    display: block;
-
 }
