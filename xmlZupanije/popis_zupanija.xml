@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type = "application/xml" href = "XSLTFile.xslt" ?>
+<?xml-stylesheet type = "text/xsl" href = "XSLTFile.xslt"?>
+<tablica_zupanija>
+ 
+  
+   
+    <zupanija>
+      <naziv>Mlijeko (0,9 % masti)</naziv>
+      <energija mjera="kJ">167</energija>
+      <energija mjera="kcal">120</energija>
+      <uh>4,7</uh>
+      <bjelancevine>3,3</bjelancevine>
+      <masti>0,9</masti>
+    </zupanija>
+
+    <zupanija>
+      <naziv>Mlijeko (0,9 % masti)</naziv>
+      <energija mjera="kJ">167</energija>
+      <energija mjera="kcal">120</energija>
+      <uh>4,7</uh>
+      <bjelancevine>3,3</bjelancevine>
+      <masti>0,9</masti>
+    </zupanija>
+     
+    <zupanija>
+      <naziv>Mlijeko (0,9 % masti)</naziv>
+      <energija mjera="kJ">167</energija>
+      <energija mjera="kcal">120</energija>
+      <uh>4,7</uh>
+      <bjelancevine>3,3</bjelancevine>
+      <masti>0,9</masti>
+    </zupanija>

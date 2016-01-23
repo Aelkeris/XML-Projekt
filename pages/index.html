@@ -5,38 +5,69 @@
     <title>XML</title>
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <script type="text/javascript" src="../scripts/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../maphilight/jquery.maphilight.js"></script>
+    <script src="../js/sarissa.js"></script>
+    <script src="../js/sarissa_ieemu_xpath.js"></script>
+
+  
 </head>
 
-<body>
-    
-    
-    <div id=main>
-        <img id=zupanija01 src="../pictures/zupanije/Layer 1.png" >
-        <img id=podloga src="../pictures/zupanije/Layer 0.png" alt="Karta">
-        
-    </div>
 
+<body>
     <script>
-        
-        $( "#zupanija01" )
-        .mouseenter(function() {
-            $(  "#zupanija01").css( 'visibility', 'visible' );
-            
-        })
-        .mouseleave(function() {
-             $(  "#zupanija01", this ).css( 'visibility', 'hidden' );
-        });
-        
-        $( "#zupanija01" ).click(function()
-        {
-            $( "#zupanija01" ).css('visibility', 'visible');
-       
-        });
-   
-        
+    $(function() {
+        $('.map').maphilight({
+            fillColor: '008800'
+        });    
+    });
+
+
     </script>
 
+    <script type="text/javascript">
+    function openXML()
+    {
+        var xml = new XMLHttpRequest();
+        xml.open("GET", "popis_zupanija.xml", false);
+        xml.send('');
+        xmlDoc = xml.responseXML;
+
+        var string = "<table class='col-md-6 table table-hover table-condensed'><tr><th>Naziv</th></tr>";
+        var x = xmlDoc.getElementsByTagName("zupanija");
+        var test = x[0].getElementsByTagName("id")[0].childNodes[0].nodeValue;
+        if($("#1")[0].id==test)
+        {
+            string += "<tr><td>" + x[0].getElementsByTagName("naziv")[0].childNodes[0].nodeValue + "</td></tr>";  
+            string += "</table>";
+        }
+
+       
+        
+        document.getElementById("body").innerHTML += string;
+    }
+
+    function emptyDIV()
+    {
+        
+        document.getElementById("body").innerHTML ='';
+    }
+    </script>
+    
+<div id="HR">
+    <img id="karta" src="../Pictures/KartaHrvatske.png" alt="Hrvatska" width="720" height="697" border="0" usemap="#Map" class="map"/>
+
+    <map name="Map" >
+        <area shape="poly" id="1" name="1" coords="241,157,264,144,270,149,278,144,276,138,279,126,289,123,303,132,289,142,289,152,294,156,
+                                    293,159,287,158,284,163,298,176,321,151,329,154,333,142,325,124,334,111,339,120,345,118,
+                                    379,134,379,143,372,142,370,149,361,148,358,161,370,169,358,179,344,171,335,176,328,171,
+                                    314,182,318,190,301,197,300,189,291,185,286,189,270,176,263,177,259,176,258,172" 
+                                    onmouseover="openXML()" onmouseout="emptyDIV()"/>
+    </map>
+</div>
+
+<div id="body"></div>
 
 
 
