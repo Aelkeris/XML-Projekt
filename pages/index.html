@@ -16,34 +16,34 @@
 
 
 <body>
-    <script>
-    $(function() {
-        $('.map').maphilight({
-            fillColor: '008800'
-        });    
-    });
-
-
-    </script>
-
+ 
     <script type="text/javascript">
-    function openXML()
-    {
-        var xml = new XMLHttpRequest();
+    var xml = new XMLHttpRequest();
         xml.open("GET", "popis_zupanija.xml", false);
         xml.send('');
         xmlDoc = xml.responseXML;
 
+
+    $(function() {
+            $('.map').maphilight({
+                fillColor: '008800'
+            });    
+        });
+
+     function openXML(id,id2)
+     //prvi id broj je broj elementa u polju ucitanog u varijablu test izvucenog iz xml dokumenta
+     //drugi id broj je broj html elementa iz kojeg se pozvala metoda
+    {
         var string = "<table class='col-md-6 table table-hover table-condensed'><tr><th>Naziv</th></tr>";
         var x = xmlDoc.getElementsByTagName("zupanija");
-        var test = x[0].getElementsByTagName("id")[0].childNodes[0].nodeValue;
-        if($("#1")[0].id==test)
+        var test = x[id].getElementsByTagName("id")[0].childNodes[0].nodeValue;
+        var naziv = x[id].getElementsByTagName("naziv")[0].childNodes[0].nodeValue;
+        if(id2==test)
         {
-            string += "<tr><td>" + x[0].getElementsByTagName("naziv")[0].childNodes[0].nodeValue + "</td></tr>";  
+            string += "<tr><td>" + naziv+ "</td></tr>";  
             string += "</table>";
         }
 
-       
         
         document.getElementById("body").innerHTML += string;
     }
@@ -59,12 +59,65 @@
     <img id="karta" src="../Pictures/KartaHrvatske.png" alt="Hrvatska" width="720" height="697" border="0" usemap="#Map" class="map"/>
 
     <map name="Map" >
-        <area shape="poly" id="1" name="1" coords="241,157,264,144,270,149,278,144,276,138,279,126,289,123,303,132,289,142,289,152,294,156,
+        <area shape="poly" id="1"  coords="241,157,264,144,270,149,278,144,276,138,279,126,289,123,303,132,289,142,289,152,294,156,
                                     293,159,287,158,284,163,298,176,321,151,329,154,333,142,325,124,334,111,339,120,345,118,
                                     379,134,379,143,372,142,370,149,361,148,358,161,370,169,358,179,344,171,335,176,328,171,
                                     314,182,318,190,301,197,300,189,291,185,286,189,270,176,263,177,259,176,258,172" 
-                                    onmouseover="openXML()" onmouseout="emptyDIV()"/>
+                                    onmouseover="openXML('0','1')" onmouseout="emptyDIV()"/>
+
+        <area shape="poly" id="2"  coords="278,121,285,122,288,119,305,130,323,123,334,107,333,92,308,92,295,80,269,98" 
+                                    onmouseover="openXML('1','2')" onmouseout="emptyDIV()"/> 
+
+        <area shape="poly" id="3" coords="342,173,334,180,326,174,317,183,320,190,313,198,298,199,294,195,291,196,293,200,290,212,
+                                    285,213,289,223,286,228,290,232,306,232,340,268,362,233,393,238,404,226,423,240,424,239,419,233,430,217,376,169,358,
+                                    184" 
+                                    onmouseover="openXML('2','3')" onmouseout="emptyDIV()"/>
+
+        <area shape="poly" id="4"  coords="238,158,262,182,267,178,286,193,292,188,299,193,298,196,294,193,289,196,288,210,282,214,
+                                            286,222,283,228,288,233,278,275,248,276,239,263,236,263,223,251,218,251,216,253,200,245,
+                                            201,221,212,227,220,221,226,203,229,199,237,201,243,195,237,189,237,175,246,174,232,161" 
+                                            onmouseover="openXML('3','4')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="5"  coords="298,78,298,84,324,92,329,87,335,91,340,118,350,97,369,88,379,88,387,75,346,73,339,63,322,60,315,62" onmouseover="openXML('4','5')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="6"  coords="346,115,370,129,380,130,382,113,397,105,403,114,403,120,408,119,412,122,412,128,
+                                            419,127,419,132,423,133,432,120,441,120,429,97,399,78,398,70,393,78,390,76,381,90,360,99,352,99" 
+                                            onmouseover="openXML('5','6')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="7"  coords="" onmouseover="openXML('6','7')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="8"  coords="" onmouseover="openXML('7','8')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="9"  coords="" onmouseover="openXML('8','9')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="10"  coords="" onmouseover="openXML('9','10')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="11"  coords="" onmouseover="openXML('10','11')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="12"  coords="" onmouseover="openXML('11','12')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="13"  coords="" onmouseover="openXML('12','13')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="14"  coords="" onmouseover="openXML('13','14')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="15"  coords="" onmouseover="openXML('14','15')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="16"  coords="" onmouseover="openXML('15','16')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="17"  coords="" onmouseover="openXML('16','17')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="18"  coords="" onmouseover="openXML('17','18')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="19"  coords="" onmouseover="openXML('18','19')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="20"  coords="" onmouseover="openXML('19','20')" onmouseout="emptyDIV()"/>        
+
+        <area shape="poly" id="21" coords="299,174,285,163,287,159,293,160,297,156,292,152,291,143,323,125,331,142,328,151,321,148" 
+                                    onmouseover="openXML('20','21')" onmouseout="emptyDIV()"/>               
+
+                              
     </map>
+
 </div>
 
 <div id="body"></div>
