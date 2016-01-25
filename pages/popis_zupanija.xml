@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type = "application/xml" href = "XSLTFile.xslt" ?>
+<?xml-stylesheet type = "text/xsl" href = "XSLTFile.xslt"?>
+<tablica_zupanija> 
+    <zupanija>
+      <id>1</id>
+      <naziv>Zagrebačka</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>2</id>
+      <naziv>Krapinsko-Zagorska</naziv>
+    </zupanija>
+     
+    <zupanija>
+      <id>3</id>
+      <naziv>Sisačko-Moslavačka</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>4</id>
+      <naziv>Karlovačka</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>5</id>
+      <naziv>Varaždinska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>6</id>
+      <naziv>Koprivničko-križevačka</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>7</id>
+      <naziv>Bjelovarsko-bilogorska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>8</id>
+      <naziv>Primorsko-goranska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>9</id>
+      <naziv>Ličko-senjska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>10</id>
+      <naziv>Virovitičko-podravska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>11</id>
+      <naziv>Požeško-slavonska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>12</id>
+      <naziv>Brodsko-posavska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>13</id>
+      <naziv>Zadarska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>14</id>
+      <naziv>Osječko-baranjska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>15</id>
+      <naziv>Šibensko-kninska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>16</id>
+      <naziv>Vukovarsko-srijemska</naziv>
+    </zupanija>
+     
+    <zupanija>
+      <id>17</id>
+      <naziv>Splitsko-dalmatinska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>18</id>
+      <naziv>Istarska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>19</id>
+      <naziv>Dubrovačko-neretvanska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>20</id>
+      <naziv>Međimurska</naziv>
+    </zupanija>
+
+    <zupanija>
+      <id>21</id>
+      <naziv>Grad Zagreb</naziv>
+    </zupanija>
+</tablica_zupanija> 
