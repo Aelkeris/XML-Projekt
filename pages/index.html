@@ -11,7 +11,7 @@
     <script src="../js/sarissa.js"></script>
     <script src="../js/sarissa_ieemu_xpath.js"></script>
 
-  
+  <meta charset="UTF-8">
 </head>
 
 
@@ -34,7 +34,7 @@
      //prvi id broj je broj elementa u polju ucitanog u varijablu test izvucenog iz xml dokumenta
      //drugi id broj je broj html elementa iz kojeg se pozvala metoda
     {
-        var string = "<table class='col-md-6 table table-hover table-condensed'><tr><th>Naziv</th></tr>";
+        var string = "<table class='col-md-6 table table-hover table-condensed'><tr><th>Naziv :</th></tr>";
         var x = xmlDoc.getElementsByTagName("zupanija");
         var test = x[id].getElementsByTagName("id")[0].childNodes[0].nodeValue;
         var naziv = x[id].getElementsByTagName("naziv")[0].childNodes[0].nodeValue;
@@ -45,15 +45,34 @@
         }
 
         
-        document.getElementById("body").innerHTML += string;
+        document.getElementById("prikaz_2").innerHTML += string;
     }
 
     function emptyDIV()
     {
         
-        document.getElementById("body").innerHTML ='';
+        document.getElementById("prikaz_2").innerHTML ='';
     }
-    </script>
+
+    
+    function pretrazivanje()
+    {
+            
+        var x = xmlDoc.getElementsByTagName("zupanija");
+        var value = document.getElementById("upit").value;
+        var string = '';
+        for (var i = 0; i < x.length; i++) 
+        {
+            if(value == "") break;
+            var zup = x[i].getElementsByTagName("naziv")[0].childNodes[0].nodeValue;
+            if(zup.substring(0,value.length).toUpperCase() !== value.toUpperCase()) continue;
+            string += x[i].getElementsByTagName("naziv")[0].childNodes[0].nodeValue;
+            string += "</br>";
+        };
+        document.getElementById("prikaz_1").innerHTML = string;
+    }
+
+</script>
     
 <div id="HR">
     <img id="karta" src="../Pictures/KartaHrvatske.png" alt="Hrvatska" width="720" height="697" border="0" usemap="#Map" class="map"/>
@@ -106,15 +125,15 @@
 
         <area shape="poly" id="14"  coords="508,152,524,171,506,197,529,209,527,226,572,235,571,224,609,193,621,201,635,192,609,133" onmouseover="openXML('13','14')" onmouseout="emptyDIV()"/>        
 
-        <area shape="poly" id="15"  coords="" onmouseover="openXML('14','15')" onmouseout="emptyDIV()"/>        
+        <area shape="poly" id="15"  coords="328,383,321,385,321,394,315,398,302,389,288,404,292,407,279,435,272,433,268,437,261,431,259,433,244,437,230,428,221,437,299,497,308,487,312,487,315,482,311,476,311,473,317,471,322,459,331,463,331,460,341,459,342,448,351,441,342,432,342,427,361,417" onmouseover="openXML('14','15')" onmouseout="emptyDIV()"/>        
 
         <area shape="poly" id="16"  coords="609,195,573,225,579,236,573,252,608,288,623,287,669,240,667,234" onmouseover="openXML('15','16')" onmouseout="emptyDIV()"/>        
 
-        <area shape="poly" id="17"  coords="" onmouseover="openXML('16','17')" onmouseout="emptyDIV()"/>        
+        <area shape="poly" id="17"  coords="362,419,357,419,344,427,343,431,354,441,344,449,343,460,332,463,323,461,318,472,312,473,316,482,313,488,309,488,299,497,302,573,403,552,450,548,460,536" onmouseover="openXML('16','17')" onmouseout="emptyDIV()"/>        
 
         <area shape="poly" id="18"  coords="43,195,82,294,93,294,118,245,107,197" onmouseover="openXML('17','18')" onmouseout="emptyDIV()"/>        
 
-        <area shape="poly" id="19"  coords="" onmouseover="openXML('18','19')" onmouseout="emptyDIV()"/>        
+        <area shape="poly" id="19"  coords="460,537,450,549,403,553,356,565,353,604,577,652,565,627" onmouseover="openXML('18','19')" onmouseout="emptyDIV()"/>        
 
         <area shape="poly" id="20"  coords="336,47,347,71,393,75,396,67,347,39" onmouseover="openXML('19','20')" onmouseout="emptyDIV()"/>        
 
@@ -123,10 +142,12 @@
 
                               
     </map>
-<div id="body"></div>
+<div id="prikaz_2"></div>
 </div>
 
-
+<h3 id="naziv_pretrazivanja">Pretraživanje županija</br> po nazivu :</h3>
+<input type="text" id="upit" oninput="pretrazivanje()">
+<div id="prikaz_1" class="js"></div>
 
 
 
