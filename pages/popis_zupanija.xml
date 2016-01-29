@@ -5,105 +5,210 @@
     <zupanija>
       <id>1</id>
       <naziv>Zagrebačka županija</naziv>
+      <povrsina>3.060</povrsina>
+      <broj_stanovnika>317.606</broj_stanovnika>
+      <sjediste>Zagreb</sjediste>
+      <broj_gradova>9</broj_gradova>
+      <broj_opcina>25</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>2</id>
       <naziv>Krapinsko-Zagorska županija</naziv>
+      <povrsina>1.229</povrsina>
+      <broj_stanovnika>132.892</broj_stanovnika>
+      <sjediste>Krapina</sjediste>
+      <broj_gradova>7</broj_gradova>
+      <broj_opcina>25</broj_opcina>
     </zupanija>
      
     <zupanija>
       <id>3</id>
       <naziv>Sisačko-Moslavačka županija</naziv>
+      <povrsina>4.468</povrsina>
+      <broj_stanovnika>172.439</broj_stanovnika>
+      <sjediste>Sisak</sjediste>
+      <broj_gradova>7</broj_gradova>
+      <broj_opcina>12</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>4</id>
       <naziv>Karlovačka županija</naziv>
+      <povrsina>3.626</povrsina>
+      <broj_stanovnika>128.899</broj_stanovnika>
+      <sjediste>Karlovac</sjediste>
+      <broj_gradova>5</broj_gradova>
+      <broj_opcina>17</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>5</id>
       <naziv>Varaždinska županija</naziv>
+      <povrsina>1.262</povrsina>
+      <broj_stanovnika>175.951</broj_stanovnika>
+      <sjediste>Varaždin</sjediste>
+      <broj_gradova>6</broj_gradova>
+      <broj_opcina>22</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>6</id>
       <naziv>Koprivničko-križevačka županija</naziv>
+      <povrsina>1.748</povrsina>
+      <broj_stanovnika>115.584</broj_stanovnika>
+      <sjediste>Koprivinica</sjediste>
+      <broj_gradova>3</broj_gradova>
+      <broj_opcina>22</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>7</id>
       <naziv>Bjelovarsko-bilogorska županija</naziv>
+      <povrsina>2.640</povrsina>
+      <broj_stanovnika>119.764</broj_stanovnika>
+      <sjediste>Bjelovar</sjediste>
+      <broj_gradova>5</broj_gradova>
+      <broj_opcina>18</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>8</id>
       <naziv>Primorsko-goranska županija</naziv>
+      <povrsina>3.588</povrsina>
+      <broj_stanovnika>296.195</broj_stanovnika>
+      <sjediste>Rijeka</sjediste>
+      <broj_gradova>14</broj_gradova>
+      <broj_opcina>22</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>9</id>
       <naziv>Ličko-senjska županija</naziv>
+      <povrsina>5.353</povrsina>
+      <broj_stanovnika>50.927</broj_stanovnika>
+      <sjediste>Gospić</sjediste>
+      <broj_gradova>4</broj_gradova>
+      <broj_opcina>8</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>10</id>
       <naziv>Virovitičko-podravska županija</naziv>
+      <povrsina>2.024</povrsina>
+      <broj_stanovnika>84.836</broj_stanovnika>
+      <sjediste>Virovitica</sjediste>
+      <broj_gradova>3</broj_gradova>
+      <broj_opcina>13</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>11</id>
       <naziv>Požeško-slavonska županija</naziv>
+      <povrsina>1.823</povrsina>
+      <broj_stanovnika>78.034</broj_stanovnika>
+      <sjediste>Požega</sjediste>
+      <broj_gradova>5</broj_gradova>
+      <broj_opcina>5</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>12</id>
       <naziv>Brodsko-posavska županija</naziv>
+      <povrsina>2.030</povrsina>
+      <broj_stanovnika>158.575</broj_stanovnika>
+      <sjediste>Slavonski Brod</sjediste>
+      <broj_gradova>2</broj_gradova>
+      <broj_opcina>26</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>13</id>
       <naziv>Zadarska županija</naziv>
+      <povrsina>3.646</povrsina>
+      <broj_stanovnika>170.017</broj_stanovnika>
+      <sjediste>Zadar</sjediste>
+      <broj_gradova>6</broj_gradova>
+      <broj_opcina>28</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>14</id>
       <naziv>Osječko-baranjska županija</naziv>
+      <povrsina>4.155</povrsina>
+      <broj_stanovnika>305.032</broj_stanovnika>
+      <sjediste>Osijek</sjediste>
+      <broj_gradova>7</broj_gradova>
+      <broj_opcina>35</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>15</id>
       <naziv>Šibensko-kninska županija</naziv>
+      <povrsina>2.984</povrsina>
+      <broj_stanovnika>109.375</broj_stanovnika>
+      <sjediste>Šibenik</sjediste>
+      <broj_gradova>5</broj_gradova>
+      <broj_opcina>15</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>16</id>
       <naziv>Vukovarsko-srijemska županija</naziv>
+      <povrsina>2.454</povrsina>
+      <broj_stanovnika>179.521</broj_stanovnika>
+      <sjediste>Vukovar</sjediste>
+      <broj_gradova>5</broj_gradova>
+      <broj_opcina>26</broj_opcina>
     </zupanija>
      
     <zupanija>
       <id>17</id>
       <naziv>Splitsko-dalmatinska županija</naziv>
+      <povrsina>4.540</povrsina>
+      <broj_stanovnika>454.798</broj_stanovnika>
+      <sjediste>Split</sjediste>
+      <broj_gradova>16</broj_gradova>
+      <broj_opcina>39</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>18</id>
       <naziv>Istarska županija</naziv>
+      <povrsina>2.813</povrsina>
+      <broj_stanovnika>208.055</broj_stanovnika>
+      <sjediste>Pazin</sjediste>
+      <broj_gradova>10</broj_gradova>
+      <broj_opcina>31</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>19</id>
       <naziv>Dubrovačko-neretvanska županija</naziv>
+      <povrsina>1.781</povrsina>
+      <broj_stanovnika>122.568</broj_stanovnika>
+      <sjediste>Dubrovnik</sjediste>
+      <broj_gradova>5</broj_gradova>
+      <broj_opcina>17</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>20</id>
       <naziv>Međimurska županija</naziv>
+      <povrsina>729</povrsina>
+      <broj_stanovnika>113.804</broj_stanovnika>
+      <sjediste>Čakovec</sjediste>
+      <broj_gradova>3</broj_gradova>
+      <broj_opcina>22</broj_opcina>
     </zupanija>
 
     <zupanija>
       <id>21</id>
       <naziv>Grad Zagreb</naziv>
+      <povrsina>641</povrsina>
+      <broj_stanovnika>790.017</broj_stanovnika>
+      <sjediste>Zagreb</sjediste>
+      <broj_gradova>1</broj_gradova>
+      <broj_opcina>0</broj_opcina>
     </zupanija>
 </tablica_zupanija> 
